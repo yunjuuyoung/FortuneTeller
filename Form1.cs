@@ -42,6 +42,13 @@ namespace FortuneTeller
             
         }
 
+        private string GetFortune()
+        {
+            Random random = new Random();
+            int index = random.Next(0, results.Count);
+            return results[index]; 
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
